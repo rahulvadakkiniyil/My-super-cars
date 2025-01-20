@@ -1,0 +1,4 @@
+
+<module name="SuppressionFilter">
+    <property name="file" value="nohttp-checkstyle-suppressions.xml"/>
+</module>
