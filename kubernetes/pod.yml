@@ -5,6 +5,6 @@ metadata:
 spec:
   containers:
   - name: supercar-container
-    image: supercars:latest
+    image: rahulv1996/supercars:latest
     ports:
     - containerPort: 8080
