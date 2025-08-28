@@ -5,15 +5,15 @@ metadata:
 spec:
   replicas: 1
   selector:
-    matchLables:
+    matchLabels:
       app: supercars
-  templates:
+  template:
     metadata:
       labels:
         app: supercars
     spec:
       containers:
         - name: supercar-container
-          image: supercars:latest
+          image: rahulv1996/supercars:latest
           ports:
-            - containerport: 8080
+            - containerPort: 8080
