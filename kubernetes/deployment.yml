@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supercars-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLables:
+      app: supercars
+  templates:
+    metadata:
+      labels:
+        app: supercars
+    spec:
+      containers:
+        - name: supercar-container
+          image: supercars:latest
+          ports:
+            - containerport: 8080
