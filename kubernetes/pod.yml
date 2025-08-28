@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: supercar-pods
+spec:
+  containers:
+  - name: supercar-container
+    image: supercars:latest
+    ports:
+    - containerPort: 8080
